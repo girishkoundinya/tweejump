@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A4DEBBE1660E2780061500F /* circle_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A4DEBBD1660E2780061500F /* circle_info.png */; };
+		1A4DEBC51660EB1A0061500F /* FreshdeskSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4DEBC41660EB1A0061500F /* FreshdeskSDK.framework */; };
+		1A4DEBC71660EB230061500F /* FreshdeskSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1A4DEBC61660EB230061500F /* FreshdeskSDKResources.bundle */; };
+		1A8960611660A725000423BE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8960601660A725000423BE /* SystemConfiguration.framework */; };
 		F49E735C15ACCF46009C8E84 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49E735B15ACCF46009C8E84 /* QuartzCore.framework */; };
 		F49E735E15ACCF46009C8E84 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49E735D15ACCF46009C8E84 /* OpenGLES.framework */; };
 		F49E736015ACCF46009C8E84 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49E735F15ACCF46009C8E84 /* OpenAL.framework */; };
@@ -118,6 +122,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A4DEBBD1660E2780061500F /* circle_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_info.png; sourceTree = "<group>"; };
+		1A4DEBC41660EB1A0061500F /* FreshdeskSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FreshdeskSDK.framework; path = tweejump/FreshdeskSDK.framework; sourceTree = "<group>"; };
+		1A4DEBC61660EB230061500F /* FreshdeskSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FreshdeskSDKResources.bundle; path = tweejump/FreshdeskSDKResources.bundle; sourceTree = "<group>"; };
+		1A8960601660A725000423BE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F49E735715ACCF46009C8E84 /* tweejump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tweejump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49E735B15ACCF46009C8E84 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F49E735D15ACCF46009C8E84 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -339,6 +347,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A8960611660A725000423BE /* SystemConfiguration.framework in Frameworks */,
 				F49E735C15ACCF46009C8E84 /* QuartzCore.framework in Frameworks */,
 				F49E735E15ACCF46009C8E84 /* OpenGLES.framework in Frameworks */,
 				F49E736015ACCF46009C8E84 /* OpenAL.framework in Frameworks */,
@@ -347,6 +356,7 @@
 				F49E736615ACCF46009C8E84 /* UIKit.framework in Frameworks */,
 				F49E736815ACCF46009C8E84 /* Foundation.framework in Frameworks */,
 				F49E736A15ACCF46009C8E84 /* CoreGraphics.framework in Frameworks */,
+				1A4DEBC51660EB1A0061500F /* FreshdeskSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +366,7 @@
 		F49E734C15ACCF46009C8E84 = {
 			isa = PBXGroup;
 			children = (
+				1A4DEBC61660EB230061500F /* FreshdeskSDKResources.bundle */,
 				F49E736B15ACCF46009C8E84 /* tweejump */,
 				F49E735A15ACCF46009C8E84 /* Frameworks */,
 				F49E735815ACCF46009C8E84 /* Products */,
@@ -373,6 +384,8 @@
 		F49E735A15ACCF46009C8E84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A4DEBC41660EB1A0061500F /* FreshdeskSDK.framework */,
+				1A8960601660A725000423BE /* SystemConfiguration.framework */,
 				F49E735B15ACCF46009C8E84 /* QuartzCore.framework */,
 				F49E735D15ACCF46009C8E84 /* OpenGLES.framework */,
 				F49E735F15ACCF46009C8E84 /* OpenAL.framework */,
@@ -687,6 +700,7 @@
 		F4D0CBDB15ACD027007C74DF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1A4DEBBD1660E2780061500F /* circle_info.png */,
 				F4D0CBDC15ACD027007C74DF /* changePlayerButton.png */,
 				F4D0CBDD15ACD027007C74DF /* playAgainButton.png */,
 				F4D0CBDE15ACD027007C74DF /* sprites.png */,
@@ -759,6 +773,8 @@
 				F4D0CBE115ACD027007C74DF /* changePlayerButton.png in Resources */,
 				F4D0CBE215ACD027007C74DF /* playAgainButton.png in Resources */,
 				F4D0CBE315ACD027007C74DF /* sprites.png in Resources */,
+				1A4DEBBE1660E2780061500F /* circle_info.png in Resources */,
+				1A4DEBC71660EB230061500F /* FreshdeskSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -909,11 +925,17 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/tweejump\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = tweejump/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = tweejump/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -925,10 +947,16 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/tweejump\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = tweejump/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = tweejump/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;

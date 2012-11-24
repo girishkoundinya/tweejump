@@ -12,6 +12,7 @@
 #import "GameConfig.h"
 #import "RootViewController.h"
 #import "Game.h"
+#import <FreshdeskSDK/FreshdeskSDK.h>
 
 @implementation AppDelegate
 
@@ -104,8 +105,14 @@
 	// It can be RGBA8888, RGBA4444, RGB5_A1, RGB565
 	// You can change anytime.
 	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
-
-	
+    
+    
+    //Freshdesk Support
+	[FDSupport setUpWithSite:@"tweejump.freshdesk.com" andApikey:@"qGW45DYENpEH3Nacotk"];
+    [FDSupport setUpColor:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:70/255.0 green:130/255.0 blue:180/255.0 alpha:2], FD_NAVBAR_COLOR, nil]];
+    //End Freshdesk
+    
+    
 	// Removes the startup flicker
 	[self removeStartupFlicker];
 	

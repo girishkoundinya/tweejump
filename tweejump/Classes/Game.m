@@ -1,6 +1,7 @@
 #import "Game.h"
 #import "Main.h"
 #import "Highscores.h"
+#import <FreshdeskSDK/FreshdeskSDK.h>
 
 @interface Game (Private)
 - (void)initPlatforms;
@@ -53,6 +54,15 @@
 //	LabelAtlas *scoreLabel = [LabelAtlas labelAtlasWithString:@"0" charMapFile:@"charmap.png" itemWidth:24 itemHeight:32 startCharMap:' '];
 //	[self addChild:scoreLabel z:5 tag:kScoreLabel];
 	
+    //Support Button
+    CCMenuItem *button2 = [CCMenuItemImage itemFromNormalImage:@"circle_info.png" selectedImage:@"circle_info.png" target:self selector:@selector(supportCallback:)];
+	CCMenu *menu = [CCMenu menuWithItems: button2, nil];
+    [menu alignItemsVerticallyWithPadding:9];
+	menu.position = ccp(300,460);
+	
+	[self addChild:menu];
+    //end
+    
 	CCLabelBMFont *scoreLabel = [CCLabelBMFont labelWithString:@"0" fntFile:@"bitmapFont.fnt"];
 	[self addChild:scoreLabel z:5 tag:kScoreLabel];
 	scoreLabel.position = ccp(160,430);
@@ -68,6 +78,19 @@
 	
 	return self;
 }
+
+//Present Freshdesk Support
+- (void)supportCallback:(id)sender {
+    if (gameSuspended) {
+        gameSuspended = NO;
+    } else {
+        gameSuspended = YES;
+        UIViewController* myController = [[UIViewController alloc] init];
+        [[[CCDirector sharedDirector] openGLView] addSubview:myController.view];
+        [[FDSupport sharedInstance] presentSupport:myController];
+    }
+}
+//End Freshdesk
 
 - (void)dealloc {
 //	NSLog(@"Game::dealloc");
